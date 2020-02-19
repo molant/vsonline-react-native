@@ -1,0 +1,6 @@
+
+export ANDROID_HOME=/home/vsonline/android
+export ANDROID_SDK_HOME=${ANDROID_HOME}
+export ANDROID_NDK=/home/vsonline/ndk/android-ndk-r$NDK_VERSION
+
+export PATH=${ANDROID_NDK}:${ANDROID_HOME}/emulator:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools:/opt/buck/bin/:${PATH}

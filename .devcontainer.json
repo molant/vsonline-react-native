@@ -6,15 +6,17 @@
 
   "dockerFile": "Dockerfile",
 
-  // Install ESLint and Peacock extensions
   "extensions": [
     "dbaeumer.vscode-eslint",
     "msjsdiag.vscode-react-native",
     "ms-azuretools.vscode-docker"
   ],
 
-  // Set remote color for Peacock
+  "forwardPorts": [80, 443, 5555, 5556, 8554],
+
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
-  }
+  },
+
+  "postCreateCommand": "/bin/bash ./install.sh > install.log"
 }
